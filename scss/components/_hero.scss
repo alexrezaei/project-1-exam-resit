@@ -1,0 +1,157 @@
+.hero {
+    margin-top: 20px;
+    .content {
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            span {
+                font-size: 3rem;
+                color: #0AFF40;
+            }
+        }
+        p {
+            display: none;
+        }
+    }
+    .hero__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .btn {
+            color: black;
+            font-weight: bold;
+            font-size: 1.8rem;
+            padding: 18px 38px;
+            border-radius: 5px;
+            &:first-child {
+                margin-top: 46px;
+            }
+            &:last-child {
+                margin-top: 23px;
+            }
+        }
+        .btn.green {
+            background-color: #0AFF40;
+            box-shadow: 2px 4px 4px 3px rgba(115, 209, 58, 0.51);
+        }
+        .btn.white {
+            box-shadow: 2px 4px 4px 3px rgba(115, 209, 58, 0.51);
+            background-color: white;
+        }
+    }
+    .hero__images {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .img-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .content {
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    font-size: 3.8rem;
+                    max-width: 387px;
+                    span {
+                        font-size: 3.8rem;
+                    }
+                }
+                p {
+                    margin-top: 40px;
+                    display: block;
+                    max-width: 489px;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    color: white;
+                }
+            }
+            .hero__btns {
+                flex-direction: row;
+                .btn {
+                    margin-top: 40px;
+                }
+            }
+        }
+        .hero__images {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            .img-container {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1040px) {
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 1080px;
+        .content {
+            .text {
+                align-items: flex-start;
+                h1 {
+                  font-size: 5.5rem;
+                  text-align: left;
+                  max-width: 550px;
+                  span {
+                      font-size: 5.5rem;
+                  }
+                }
+                p {
+                    text-align: left;
+                    margin-left: 0;
+                }
+            }
+            .hero__btns {
+                justify-content: flex-start;
+                .btn {
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .hero__images {
+            width: 40%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            .img-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

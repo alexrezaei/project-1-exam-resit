@@ -1,0 +1,14 @@
+$colours: (
+    neon-green: #0AFF40,
+    black: #000000,
+    purple: #CC00FF,
+    turqoise: #00FFD1
+    background: #000D25,
+    green-shadow: #73D13A,
+    purple-shadow: #8E20A9,
+    turqoise-shadow: #32CBAF,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}

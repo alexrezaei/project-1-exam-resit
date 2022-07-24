@@ -1,0 +1,51 @@
+.homepage__newsletter {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img-container {
+        width: 245px;
+        height: 214px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            margin-top: 40px;
+            font-size: 1.9rem;
+            text-align: center;
+            max-width: 300px;
+            color: white;
+        }
+        .input-field {
+            display: flex;
+            margin-top: 20px;
+            input {
+                height: 40px;
+                width: 200px;
+                font-size: 18px;
+                color: white;
+                border: 1px solid #0AFF40;
+                background-color: transparent;
+                padding-left: 10px;
+            }
+            button {
+                height: 40px;
+                padding: 0 20px;
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
+                background: #0AFF40;
+                border: 1px solid #0AFF40;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                box-shadow: 2px 4px 4px 3px rgba(115, 209, 58, 0.51);
+            }
+        }
+    }
+}

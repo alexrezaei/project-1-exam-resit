@@ -1,0 +1,47 @@
+.recepies__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    .box {
+        width: 100%;
+        height: 100%;
+        padding: 17px 28px 17px 27px;
+        max-width: 320px;
+        background-color: #011336;
+        border-radius: 5px;
+        .img-container {
+           width: 120px;
+           height: 120px;
+           img {
+               width: 100%;
+               height: 100%;
+               border-radius: 50%;
+           } 
+        }
+        .text {
+            ol {
+                margin:0 0 0 13px;
+                li {
+                    margin-top: 8px;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    color: white;
+                }
+            }
+            h2 {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            }
+            p {
+                margin-top: 10px;
+                font-size: 1.8rem;
+                color: white;
+            }
+        }
+    }
+}
